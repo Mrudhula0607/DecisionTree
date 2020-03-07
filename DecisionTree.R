@@ -20,6 +20,7 @@ entropyCalc <- function(s) {
 }
 
 #information gain function
+#the one with maximum value is chosen
 informationGain <- function(s,a){
   newdata = data.frame(data[a],data$play)
   t=table(newdata)
